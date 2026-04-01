@@ -10,7 +10,7 @@ namespace _22_PresupuestoHospitalario
     {
         static void Main(string[] args)
         {
-            Console.Write("presupuesto anual: ");
+            Console.Write("Ingrese el presupuesto anual del hospital: ");
             double presupuesto = double.Parse(Console.ReadLine());
             double gine = (presupuesto * 40) / 100;
             double trauma = (presupuesto * 30) / 100;

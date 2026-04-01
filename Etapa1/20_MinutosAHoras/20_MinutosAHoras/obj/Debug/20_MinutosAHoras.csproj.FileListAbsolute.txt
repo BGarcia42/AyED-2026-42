@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\20_MinutosAHoras\20_MinutosAHoras\bin\Debug\20_MinutosAHoras.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\20_MinutosAHoras\20_MinutosAHoras\bin\Debug\20_MinutosAHoras.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\20_MinutosAHoras\20_MinutosAHoras\bin\Debug\20_MinutosAHoras.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\20_MinutosAHoras\20_MinutosAHoras\obj\Debug\20_MinutosAHoras.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\20_MinutosAHoras\20_MinutosAHoras\obj\Debug\20_MinutosAHoras.pdb

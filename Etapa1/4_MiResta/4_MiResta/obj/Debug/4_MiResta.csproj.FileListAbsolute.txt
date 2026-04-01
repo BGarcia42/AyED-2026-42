@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\4_MiResta\4_MiResta\bin\Debug\4_MiResta.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\4_MiResta\4_MiResta\bin\Debug\4_MiResta.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\4_MiResta\4_MiResta\bin\Debug\4_MiResta.pdb
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\4_MiResta\4_MiResta\obj\Debug\4_MiResta.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\4_MiResta\4_MiResta\obj\Debug\4_MiResta.pdb

@@ -1,0 +1,6 @@
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\22_PresupuestoHospitalario\22_PresupuestoHospitalario\bin\Debug\22_PresupuestoHospitalario.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\22_PresupuestoHospitalario\22_PresupuestoHospitalario\bin\Debug\22_PresupuestoHospitalario.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\22_PresupuestoHospitalario\22_PresupuestoHospitalario\bin\Debug\22_PresupuestoHospitalario.pdb
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\22_PresupuestoHospitalario\22_PresupuestoHospitalario\obj\Debug\22_PresupuestoHospitalario.csprojResolveAssemblyReference.cache
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\22_PresupuestoHospitalario\22_PresupuestoHospitalario\obj\Debug\22_PresupuestoHospitalario.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\22_PresupuestoHospitalario\22_PresupuestoHospitalario\obj\Debug\22_PresupuestoHospitalario.pdb

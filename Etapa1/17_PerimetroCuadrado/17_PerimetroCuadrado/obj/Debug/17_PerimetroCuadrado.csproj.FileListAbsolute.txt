@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\17_PerimetroCuadrado\17_PerimetroCuadrado\bin\Debug\17_PerimetroCuadrado.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\17_PerimetroCuadrado\17_PerimetroCuadrado\bin\Debug\17_PerimetroCuadrado.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\17_PerimetroCuadrado\17_PerimetroCuadrado\bin\Debug\17_PerimetroCuadrado.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\17_PerimetroCuadrado\17_PerimetroCuadrado\obj\Debug\17_PerimetroCuadrado.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\17_PerimetroCuadrado\17_PerimetroCuadrado\obj\Debug\17_PerimetroCuadrado.pdb

@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\11_AlRevez\11_AlRevez\bin\Debug\11_AlRevez.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\11_AlRevez\11_AlRevez\bin\Debug\11_AlRevez.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\11_AlRevez\11_AlRevez\bin\Debug\11_AlRevez.pdb
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\11_AlRevez\11_AlRevez\obj\Debug\11_AlRevez.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\11_AlRevez\11_AlRevez\obj\Debug\11_AlRevez.pdb

@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\1_SuNombre\1_SuNombre\bin\Debug\1_SuNombre.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\1_SuNombre\1_SuNombre\bin\Debug\1_SuNombre.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\1_SuNombre\1_SuNombre\bin\Debug\1_SuNombre.pdb
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\1_SuNombre\1_SuNombre\obj\Debug\1_SuNombre.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\1_SuNombre\1_SuNombre\obj\Debug\1_SuNombre.pdb

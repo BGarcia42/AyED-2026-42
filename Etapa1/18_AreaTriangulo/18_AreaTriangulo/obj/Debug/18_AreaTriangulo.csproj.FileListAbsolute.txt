@@ -1,0 +1,6 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\18_AreaTriangulo\18_AreaTriangulo\bin\Debug\18_AreaTriangulo.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\18_AreaTriangulo\18_AreaTriangulo\bin\Debug\18_AreaTriangulo.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\18_AreaTriangulo\18_AreaTriangulo\bin\Debug\18_AreaTriangulo.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\18_AreaTriangulo\18_AreaTriangulo\obj\Debug\18_AreaTriangulo.csprojResolveAssemblyReference.cache
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\18_AreaTriangulo\18_AreaTriangulo\obj\Debug\18_AreaTriangulo.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\18_AreaTriangulo\18_AreaTriangulo\obj\Debug\18_AreaTriangulo.pdb

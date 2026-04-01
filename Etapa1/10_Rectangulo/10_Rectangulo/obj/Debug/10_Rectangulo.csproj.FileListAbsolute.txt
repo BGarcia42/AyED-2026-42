@@ -1,0 +1,6 @@
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\10_Rectangulo\10_Rectangulo\bin\Debug\10_Rectangulo.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\10_Rectangulo\10_Rectangulo\bin\Debug\10_Rectangulo.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\10_Rectangulo\10_Rectangulo\bin\Debug\10_Rectangulo.pdb
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\10_Rectangulo\10_Rectangulo\obj\Debug\10_Rectangulo.csprojResolveAssemblyReference.cache
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\10_Rectangulo\10_Rectangulo\obj\Debug\10_Rectangulo.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\10_Rectangulo\10_Rectangulo\obj\Debug\10_Rectangulo.pdb

@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\16_DatosPersonales\16_DatosPersonales\bin\Debug\16_DatosPersonales.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\16_DatosPersonales\16_DatosPersonales\bin\Debug\16_DatosPersonales.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\16_DatosPersonales\16_DatosPersonales\bin\Debug\16_DatosPersonales.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\16_DatosPersonales\16_DatosPersonales\obj\Debug\16_DatosPersonales.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\16_DatosPersonales\16_DatosPersonales\obj\Debug\16_DatosPersonales.pdb

@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\13_DobleYTriple\13_DobleYTriple\bin\Debug\13_DobleYTriple.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\13_DobleYTriple\13_DobleYTriple\bin\Debug\13_DobleYTriple.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\13_DobleYTriple\13_DobleYTriple\bin\Debug\13_DobleYTriple.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\13_DobleYTriple\13_DobleYTriple\obj\Debug\13_DobleYTriple.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\13_DobleYTriple\13_DobleYTriple\obj\Debug\13_DobleYTriple.pdb

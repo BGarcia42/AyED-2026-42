@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\15_NombreCompleto\15_NombreCompleto\bin\Debug\15_NombreCompleto.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\15_NombreCompleto\15_NombreCompleto\bin\Debug\15_NombreCompleto.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\15_NombreCompleto\15_NombreCompleto\bin\Debug\15_NombreCompleto.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\15_NombreCompleto\15_NombreCompleto\obj\Debug\15_NombreCompleto.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\15_NombreCompleto\15_NombreCompleto\obj\Debug\15_NombreCompleto.pdb

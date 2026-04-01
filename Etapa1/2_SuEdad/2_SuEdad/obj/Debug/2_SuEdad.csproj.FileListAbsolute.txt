@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\2_SuEdad\2_SuEdad\bin\Debug\2_SuEdad.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\2_SuEdad\2_SuEdad\bin\Debug\2_SuEdad.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\2_SuEdad\2_SuEdad\bin\Debug\2_SuEdad.pdb
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\2_SuEdad\2_SuEdad\obj\Debug\2_SuEdad.exe
+C:\Users\Lab AyED\Documents\11_García_M\Etapa0\2_SuEdad\2_SuEdad\obj\Debug\2_SuEdad.pdb

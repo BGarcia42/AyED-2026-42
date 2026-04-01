@@ -1,0 +1,5 @@
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\21_SueldoTotal\21_SueldoTotal\bin\Debug\21_SueldoTotal.exe.config
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\21_SueldoTotal\21_SueldoTotal\bin\Debug\21_SueldoTotal.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\21_SueldoTotal\21_SueldoTotal\bin\Debug\21_SueldoTotal.pdb
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\21_SueldoTotal\21_SueldoTotal\obj\Debug\21_SueldoTotal.exe
+C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\21_SueldoTotal\21_SueldoTotal\obj\Debug\21_SueldoTotal.pdb

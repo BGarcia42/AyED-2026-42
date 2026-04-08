@@ -4,3 +4,6 @@ C:\Users\Lab AyED\Documents\11_García_M\Etapa0\23_CapacidadHDD\23_CapacidadHDD\
 C:\Users\Lab AyED\Documents\11_García_M\Etapa0\23_CapacidadHDD\23_CapacidadHDD\bin\Debug\23_CapacidadHDD.pdb
 C:\Users\Lab AyED\Documents\11_García_M\Etapa0\23_CapacidadHDD\23_CapacidadHDD\obj\Debug\23_CapacidadHDD.exe
 C:\Users\Lab AyED\Documents\11_García_M\Etapa0\23_CapacidadHDD\23_CapacidadHDD\obj\Debug\23_CapacidadHDD.pdb
+C:\Users\Lab AyED\Documents\11_García_Mar\AyED-2026-42\Etapa1\23_CapacidadHDD\23_CapacidadHDD\bin\Debug\23_CapacidadHDD.exe.config
+C:\Users\Lab AyED\Documents\11_García_Mar\AyED-2026-42\Etapa1\23_CapacidadHDD\23_CapacidadHDD\obj\Debug\23_CapacidadHDD.exe
+C:\Users\Lab AyED\Documents\11_García_Mar\AyED-2026-42\Etapa1\23_CapacidadHDD\23_CapacidadHDD\obj\Debug\23_CapacidadHDD.pdb

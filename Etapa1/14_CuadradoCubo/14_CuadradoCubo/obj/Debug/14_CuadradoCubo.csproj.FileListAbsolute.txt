@@ -4,3 +4,6 @@ C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\14_CuadradoCubo\14_CuadradoCubo\b
 C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\14_CuadradoCubo\14_CuadradoCubo\obj\Debug\14_CuadradoCubo.csprojResolveAssemblyReference.cache
 C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\14_CuadradoCubo\14_CuadradoCubo\obj\Debug\14_CuadradoCubo.exe
 C:\Users\Lab AyED\Documents\11_Juarez_V\Etapa0\14_CuadradoCubo\14_CuadradoCubo\obj\Debug\14_CuadradoCubo.pdb
+C:\Users\Lab AyED\Documents\11_García_M\AyED-2026-42\Etapa1\14_CuadradoCubo\14_CuadradoCubo\bin\Debug\14_CuadradoCubo.exe.config
+C:\Users\Lab AyED\Documents\11_García_M\AyED-2026-42\Etapa1\14_CuadradoCubo\14_CuadradoCubo\obj\Debug\14_CuadradoCubo.exe
+C:\Users\Lab AyED\Documents\11_García_M\AyED-2026-42\Etapa1\14_CuadradoCubo\14_CuadradoCubo\obj\Debug\14_CuadradoCubo.pdb

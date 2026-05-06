@@ -19,7 +19,6 @@ namespace _19_Blackjack
             int victorias = 0;
             int derrotas = 0;
             bool texto = true;
-            bool reglas = false;
             Random rand = null;
 
             // game loop
@@ -54,15 +53,6 @@ namespace _19_Blackjack
                         Console.WriteLine("3. Ver reglas");
                         Console.WriteLine("4. Salir");
                     }
-                }
-
-                // reglas
-
-                if (reglas == true)
-                {
-                    Console.WriteLine("");
-                    Console.WriteLine("Pedi cartas sin pasarte del 21. Si le ganas al dealer ganaste");
-                    reglas = false;
                 }
 
                 texto = true;
@@ -104,7 +94,22 @@ namespace _19_Blackjack
                             break;
 
                         case 3:
-                            reglas = true;
+                            Console.Clear();
+                            Console.WriteLine("============= REGLAS DEL BLACKJACK =============");
+                            Console.WriteLine("El jugador compite contra la computadora, que actúa como dealer.");
+                            Console.WriteLine("El objetivo es acercarse lo más posible a 21 puntos sin pasarse.");
+                            Console.WriteLine("Cada carta suma puntos al puntaje total del jugador o del dealer.");
+                            Console.WriteLine("Si el jugador supera los 21 puntos, pierde la partida automáticamente.");
+                            Console.WriteLine("Si el jugador decide plantarse, deja de pedir cartas y comienza el turno del dealer.");
+                            Console.WriteLine("El dealer debe pedir cartas automáticamente mientras tenga menos de 17 puntos.");
+                            Console.WriteLine("Cuando el dealer llega a 17 puntos o más, se planta.");
+                            Console.WriteLine("Si el dealer supera los 21 puntos, gana el jugador.");
+                            Console.WriteLine("Si ninguno se pasa de 21, gana quien tenga el puntaje más alto.");
+                            Console.WriteLine("Si ambos terminan con el mismo puntaje, la partida queda empatada.");
+                            Console.WriteLine("================================================");
+                            Console.WriteLine("");
+                            Console.WriteLine("Presione cualquier tecla para salir");
+                            Console.ReadKey();
                             Console.Clear();
                             break;
 
@@ -114,9 +119,24 @@ namespace _19_Blackjack
                             break;
                     }
                 }
+                if (punt_jugador == 21)
+                {
+                    Console.Clear();
+                    Console.WriteLine("-= BLACKJACK SIMPLIFICADO =-");
+                    Console.WriteLine("");
+                    Console.WriteLine("Puntaje: " + punt_jugador);
+                    Console.WriteLine("Partidas ganadas: " + victorias);
+                    Console.WriteLine("Partidas perdidas: " + derrotas);
+                    Console.WriteLine("");
+                    Console.WriteLine("1. Pedir");
+                    Console.WriteLine("2. Plantarse");
+                    Console.WriteLine("3. Ver reglas");
+                    Console.WriteLine("4. Salir");
+                    Console.WriteLine("");
+                }
 
                 // chequeo puntos
-                if (punt_jugador > 20)
+                if (punt_jugador > 21)
                 {
                     activa = false;
                 }

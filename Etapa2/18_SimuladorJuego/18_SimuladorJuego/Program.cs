@@ -62,9 +62,18 @@ namespace _18_SimuladorJuego
                     Console.WriteLine("7. Descansar");
                     Console.WriteLine("8. Salir del juego");
                 }
-                opcion = int.Parse(Console.ReadLine());
+                ConsoleKeyInfo input = Console.ReadKey(true);
+                if (char.IsDigit(input.KeyChar))
+                {
+                    opcion = int.Parse(input.KeyChar.ToString());
+                }
+                else
+                {
+                    opcion = 20;
+                }
                 texto = true;
                 Console.WriteLine("");
+                Console.Clear();
                 switch (opcion)
                 {
                     case 1:
@@ -76,8 +85,9 @@ namespace _18_SimuladorJuego
                         }
                         else
                         {
-                            Console.WriteLine("¡Encontraste comida! +2 comida cruda.");
+                            Console.WriteLine("¡Encontraste comida! +2 comida cruda, -1 vida.");
                             cruda += 2;
+                            vida--;
                         }
                         dia++;
                         if (hambre < 1)

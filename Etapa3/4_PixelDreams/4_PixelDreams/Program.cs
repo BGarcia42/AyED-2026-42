@@ -20,7 +20,8 @@ namespace _4_PixelDreams
             Array.Sort(participantes);
             Array.Reverse(participantes);
             Console.Clear();
-            Console.WriteLine("-= ")
+            Console.WriteLine("-= PUNTAJES =-");
+            Console.WriteLine("");
             for (int i = 0; i < participantes.Length; i++)
             {
                 Console.WriteLine((i + 1) + "° lugar: " + participantes[i] + " puntos");

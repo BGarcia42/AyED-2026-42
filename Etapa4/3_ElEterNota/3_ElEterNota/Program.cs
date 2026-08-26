@@ -11,38 +11,28 @@ namespace _3_ElEterNota
         static void Main(string[] args)
         {
             int[,] refugios = new int[20, 5];
-            int ocupados = 0;
+            int cantidadRefugios = 0;
 
             char opcion = 'j';
             do
             {
-                Console.WriteLine("");
-                Console.WriteLine("==== MENÚ DEL ETERNOTA ====");
-                Console.WriteLine("1. Agregar refugio");
-                Console.WriteLine("2. Mostrar todos los refugios");
-                Console.WriteLine("3. Ocupar refugio");
-                Console.WriteLine("4. Mostrar ocupados");
-                Console.WriteLine("5. Refugio con más suministros");
-                Console.WriteLine("6. Promedio por zona");
-                Console.WriteLine("7. Filtrar por zona");
-                Console.WriteLine("8. Salir");
-                Console.WriteLine("");
+                MostrarMenu();
                 opcion = Console.ReadKey(true).KeyChar;
                 Console.Clear();
                 switch (opcion)
                 {
                     case '1':
-                        AñadirRefugio(refugios, ocupados);
-                        ocupados++;
+                        AñadirRefugio(refugios, cantidadRefugios);
+                        cantidadRefugios++;
                         break;
                     case '2':
                         MostrarRefugios(refugios);
                         break;
                     case '3':
-                        // Lógica para ocupar refugio
+                        OcuparRefugio(refugios, cantidadRefugios);
                         break;
                     case '4':
-                        // Lógica para mostrar ocupados
+                        // Lógica para mostrar cantidadRefugios
                         break;
                     case '5':
                         // Lógica para refugio con más suministros
@@ -66,11 +56,11 @@ namespace _3_ElEterNota
             Console.ReadKey();
         }
 
-        static void AñadirRefugio(int[,] matriz, int ocupados)
+        static void AñadirRefugio(int[,] matriz, int cantidadRefugios)
         {
             int tmp = 0;
             bool encontrado = true;
-            if (ocupados > 19)
+            if (cantidadRefugios > 19)
             {
                 Console.Clear();
                 Console.WriteLine("No hay refugios... ¡Vamos a morir!");
@@ -91,9 +81,9 @@ namespace _3_ElEterNota
                         }
                     }
                 }
-                matriz[ocupados, 0] = tmp;
+                matriz[cantidadRefugios, 0] = tmp;
                 Console.Write("Ingresá la capacidad máxima del refugio: ");
-                matriz[ocupados, 1] = int.Parse(Console.ReadLine());
+                matriz[cantidadRefugios, 1] = int.Parse(Console.ReadLine());
                 Console.Write("Ingresá la cantidad de suministros disponibles: ");
                 tmp = int.Parse(Console.ReadLine());
                 while (tmp < 0)
@@ -101,7 +91,7 @@ namespace _3_ElEterNota
                     Console.Write("No se puede sobrevivir debiendo... Intentá de nuevo: ");
                     tmp = int.Parse(Console.ReadLine());
                 }
-                matriz[ocupados, 2] = tmp;
+                matriz[cantidadRefugios, 2] = tmp;
                 Console.Write("Ingresá la zona donde está ubicado el refugio (1 es NORTE, 2 es SUR, 3 es OESTE, 4 es CENTRO): ");
                 tmp = int.Parse(Console.ReadLine());
                 while (tmp < 1 || tmp > 4)
@@ -109,7 +99,7 @@ namespace _3_ElEterNota
                     Console.Write("Zona inválida, esta parte ya está perdida... Intentá de nuevo: ");
                     tmp = int.Parse(Console.ReadLine());
                 }
-                matriz[ocupados, 3] = tmp;
+                matriz[cantidadRefugios, 3] = tmp;
                 Console.Write("¿Está ocupado el refugio? (1 es SI, 0 es NO): ");
                 tmp = int.Parse(Console.ReadLine());
                 while (tmp < 0 || tmp > 1)
@@ -117,7 +107,7 @@ namespace _3_ElEterNota
                     Console.Write("La opción que ingresaste no es válida. Intentá de nuevo: ");
                     tmp = int.Parse(Console.ReadLine());
                 }
-                matriz[ocupados, 4] = tmp;
+                matriz[cantidadRefugios, 4] = tmp;
                 Console.Clear();
                 Console.WriteLine("El refugio fue registrado exitosamente.");
             }
@@ -141,15 +131,34 @@ namespace _3_ElEterNota
             }
         }
 
-        static void OcuparRefugio(int[,] matriz)
+        static void OcuparRefugio(int[,] matriz, int cantidadRefugios)
         {
             Console.Write("Elegí el refugio que queres marcar como ocupado: ");
             int eleccion = int.Parse(Console.ReadLine());
-            for (int i = 0; i < 20; i++)
+            while (eleccion < 1 || eleccion > cantidadRefugios || matriz[eleccion - 1, 4] != 0)
             {
-                
+                if (matriz[eleccion - 1, 4] != 0) { Console.Write("No somos Okupas, esto ya está ocupado. Intentá de nuevo: "); }
+                else { Console.Write("Este refugio no existe. Intentá de nuevo: "); }
+                eleccion = int.Parse(Console.ReadLine());
             }
+            matriz[eleccion, 4] = 1;
+            Console.Clear();
+            Console.WriteLine("El refugio ha sido ocupado exitosamente.");
         }
 
+        static void MostrarMenu()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("==== MENÚ DEL ETERNOTA ====");
+            Console.WriteLine("1. Agregar refugio");
+            Console.WriteLine("2. Mostrar todos los refugios");
+            Console.WriteLine("3. Ocupar refugio");
+            Console.WriteLine("4. Mostrar cantidadRefugios");
+            Console.WriteLine("5. Refugio con más suministros");
+            Console.WriteLine("6. Promedio por zona");
+            Console.WriteLine("7. Filtrar por zona");
+            Console.WriteLine("8. Salir");
+            Console.WriteLine("");
+        }
     }
 }

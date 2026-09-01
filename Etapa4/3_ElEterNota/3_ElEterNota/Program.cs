@@ -17,7 +17,8 @@ namespace _3_ElEterNota
             do
             {
                 MostrarMenu();
-                opcion = Console.ReadKey(true).KeyChar;
+                char input = Console.ReadKey(true).KeyChar;
+                opcion = char.ToLower(input);
                 Console.Clear();
                 switch (opcion)
                 {
@@ -32,25 +33,25 @@ namespace _3_ElEterNota
                         OcuparRefugio(refugios, cantidadRefugios);
                         break;
                     case '4':
-                        // Lógica para mostrar cantidadRefugios
+                        MostrarOcupados(refugios);
                         break;
                     case '5':
-                        // Lógica para refugio con más suministros
+                        MaxSuministros(refugios);
                         break;
                     case '6':
-                        // Lógica para promedio por zona
+                        CapacidadPromedio(refugios);
                         break;
                     case '7':
-                        // Lógica para filtrar por zona
+                        FiltrarRefugios(refugios);
                         break;
-                    case 'X':
+                    case 'x':
                         Console.WriteLine("Saliendo del sistema... ¡Que la nevada no te atrape!");
                         break;
                     default:
                         Console.WriteLine("Opción no válida. Intente de nuevo.");
                         break;
                 }
-            } while (opcion != '8');
+            } while (opcion != 'x');
             Console.WriteLine("");
             Console.WriteLine("Presione una tecla para continuar...");
             Console.ReadKey();
@@ -115,6 +116,8 @@ namespace _3_ElEterNota
 
         static void MostrarRefugios(int[,] matriz)
         {
+            Console.WriteLine("Refugios:");
+            Console.WriteLine("");
             for (int i = 0; i < 20; i++)
             {
                 if (matriz[i, 0] != 0)
@@ -141,9 +144,198 @@ namespace _3_ElEterNota
                 else { Console.Write("Este refugio no existe. Intentá de nuevo: "); }
                 eleccion = int.Parse(Console.ReadLine());
             }
-            matriz[eleccion, 4] = 1;
+            matriz[eleccion - 1, 4] = 1;
             Console.Clear();
             Console.WriteLine("El refugio ha sido ocupado exitosamente.");
+        }
+
+        static void MostrarOcupados(int[,] matriz)
+        {
+            Console.WriteLine("Refugios ocupados:");
+            Console.WriteLine("");
+            for (int i = 0; i < 20; i++)
+            {
+                if (matriz[i, 4] != 0)
+                {
+                    Console.Write("Refugio " + (i + 1) + " - Código: " + matriz[i, 0] + " - Capacidad máxima: " + matriz[i, 1] + " - Suministros disponibles: " + matriz[i, 2] + " - Zona: ");
+                    if (matriz[i, 3] == 1) { Console.WriteLine("NORTE (Congreso)"); }
+                    else if (matriz[i, 3] == 2) { Console.WriteLine("SUR (Constitución)"); }
+                    else if (matriz[i, 3] == 3) { Console.WriteLine("OESTE (Flores)"); }
+                    else { Console.WriteLine("CENTRO (Microcentro)"); }
+                }
+            }
+        }
+
+        static void MaxSuministros(int[,] matriz)
+        {
+            int max = 0;
+            int fila = matriz.GetLength(0);
+            int col = matriz.GetLength(1);
+
+            for (int i = 0; i < fila - 1; i++)
+            {
+                for (int j = 0; j < fila - i - 1; j++)
+                {
+                    if (matriz[j, 2] < matriz[j + 1, 2])
+                    {
+                        for (int k = 0; k < col; k++)
+                        {
+                            int tmp = matriz[j, k];
+                            matriz[j, k] = matriz[j + 1, k];
+                            matriz[j + 1, k] = tmp;
+                        }
+                    }
+                }
+            }
+            max = matriz[0, 2];
+            Console.WriteLine("Refugio(s) con más suministros:");
+            Console.WriteLine("");
+            for (int i = 0; i < 20; i++)
+            {
+                if (matriz[i, 2] == max)
+                {
+                    Console.Write("Código: " + matriz[i, 0] + " - Capacidad máxima: " + matriz[i, 1] + " - Suministros disponibles: " + matriz[i, 2] + " - Zona: ");
+                    if (matriz[i, 3] == 1) { Console.Write("NORTE (Congreso)"); }
+                    else if (matriz[i, 3] == 2) { Console.Write("SUR (Constitución)"); }
+                    else if (matriz[i, 3] == 3) { Console.Write("OESTE (Flores)"); }
+                    else { Console.Write("CENTRO (Microcentro)"); }
+                    Console.Write(" - Ocupado: ");
+                    if (matriz[i, 4] == 1) { Console.WriteLine("SI"); }
+                    else { Console.WriteLine("NO"); }
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Nota: Si aparecen multiples refugios, es porque tienen la misma cantidad de recursos.");
+        }
+
+        static void CapacidadPromedio(int[,] matriz)
+        {
+            int norte = 0;
+            int sur = 0;
+            int oeste = 0;
+            int centro = 0;
+            int promedio = 0;
+            int total_norte = 0;
+            int total_sur = 0;
+            int total_oeste = 0;
+            int total_centro = 0;
+            int total = 0;
+            int ref_norte = 0;
+            int ref_sur = 0;
+            int ref_oeste = 0;
+            int ref_centro = 0;
+            int ref_total = 0;
+
+            for (int i = 0; i < 20; i++)
+            {
+                if (matriz[i, 0] != 0) { total += matriz[i, 1]; ref_total += 1; }
+                if (matriz[i, 3] == 1) { total_norte += matriz[i, 1]; ref_norte += 1; }
+                else if (matriz[i, 3] == 2) { total_sur += matriz[i, 1]; ref_sur += 1; }
+                else if (matriz[i, 3] == 3) { total_oeste += matriz[i, 1]; ref_oeste += 1; }
+                else if (matriz[i, 3] == 4) { total_centro += matriz[i, 1]; ref_centro += 1; }
+            }
+
+            if (ref_norte != 0) { norte = total_norte / ref_norte; }
+            if (ref_sur != 0) { sur = total_sur / ref_sur; }
+            if (ref_oeste != 0) { oeste = total_oeste / ref_oeste; }
+            if (ref_centro != 0) { centro = total_centro / ref_centro; }
+            if (ref_total != 0) { promedio = total / ref_total; }
+
+            Console.WriteLine("Capacidad promedio: " + promedio + " personas.");
+            Console.WriteLine("Promedio zona NORTE (Congreso): " + norte + " personas.");
+            Console.WriteLine("Promedio zona SUR (Constitución): " + sur + " personas.");
+            Console.WriteLine("Promedio zona OESTE (Flores): " + oeste + " personas.");
+            Console.WriteLine("Promedio zona CENTRO (Microcentro): " + centro + " personas.");
+        }
+
+        static void FiltrarRefugios(int[,] matriz)
+        {
+            bool encontrado = false;
+            Console.WriteLine("Zona NORTE (Congreso):");
+            Console.WriteLine("");
+            for (int j = 0; j < 20; j++)
+            {
+                if (matriz[j, 3] == 1) { encontrado = true; }
+            }
+            if (encontrado == false) { Console.WriteLine("No se han encontrado refugios en esta zona..."); }
+            else
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    if (matriz[i, 3] == 1)
+                    {
+                        Console.Write("Refugio " + (i + 1) + " - Código: " + matriz[i, 0] + " - Capacidad máxima: " + matriz[i, 1] + " - Suministros disponibles: " + matriz[i, 2] + " - Ocupado: ");
+                        if (matriz[i, 4] == 1) { Console.WriteLine("SI"); }
+                        else { Console.WriteLine("NO"); }
+                    }
+                }
+            }
+            Console.WriteLine("");
+
+            encontrado = false;
+            Console.WriteLine("Zona SUR (Constitución):");
+            Console.WriteLine("");
+            for (int j = 0; j < 20; j++)
+            {
+                if (matriz[j, 3] == 2) { encontrado = true; }
+            }
+            if (encontrado == false) { Console.WriteLine("No se han encontrado refugios en esta zona..."); }
+            else
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    if (matriz[i, 3] == 2)
+                    {
+                        Console.Write("Refugio " + (i + 1) + " - Código: " + matriz[i, 0] + " - Capacidad máxima: " + matriz[i, 1] + " - Suministros disponibles: " + matriz[i, 2] + " - Ocupado: ");
+                        if (matriz[i, 4] == 1) { Console.WriteLine("SI"); }
+                        else { Console.WriteLine("NO"); }
+                    }
+                }
+            }
+            Console.WriteLine("");
+
+            encontrado = false;
+            Console.WriteLine("Zona OESTE (Flores):");
+            Console.WriteLine("");
+            for (int j = 0; j < 20; j++)
+            {
+                if (matriz[j, 3] == 3) { encontrado = true; }
+            }
+            if (encontrado == false) { Console.WriteLine("No se han encontrado refugios en esta zona..."); }
+            else
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    if (matriz[i, 3] == 3)
+                    {
+                        Console.Write("Refugio " + (i + 1) + " - Código: " + matriz[i, 0] + " - Capacidad máxima: " + matriz[i, 1] + " - Suministros disponibles: " + matriz[i, 2] + " - Ocupado: ");
+                        if (matriz[i, 4] == 1) { Console.WriteLine("SI"); }
+                        else { Console.WriteLine("NO"); }
+                    }
+                }
+            }
+            Console.WriteLine("");
+
+            encontrado = false;
+            Console.WriteLine("Zona CENTRO (Microcentro):");
+            Console.WriteLine("");
+            for (int j = 0; j < 20; j++)
+            {
+                if (matriz[j, 3] == 4) { encontrado = true; }
+            }
+            if (encontrado == false) { Console.WriteLine("No se han encontrado refugios en esta zona..."); }
+            else
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    if (matriz[i, 3] == 4)
+                    {
+                        Console.Write("Refugio " + (i + 1) + " - Código: " + matriz[i, 0] + " - Capacidad máxima: " + matriz[i, 1] + " - Suministros disponibles: " + matriz[i, 2] + " - Ocupado: ");
+                        if (matriz[i, 4] == 1) { Console.WriteLine("SI"); }
+                        else { Console.WriteLine("NO"); }
+                    }
+                }
+            }
         }
 
         static void MostrarMenu()
@@ -157,7 +349,7 @@ namespace _3_ElEterNota
             Console.WriteLine("5. Refugio con más suministros");
             Console.WriteLine("6. Promedio por zona");
             Console.WriteLine("7. Filtrar por zona");
-            Console.WriteLine("8. Salir");
+            Console.WriteLine("X. Salir");
             Console.WriteLine("");
         }
     }
